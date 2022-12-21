@@ -56,6 +56,11 @@ const config = {
             position: 'left'
           },
           {
+            href: 'mailto:info@teamlinebreak.com',
+            label: 'Contact Us',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/FIRSTTeamLinebreak',
             label: 'GitHub',
             position: 'right',
