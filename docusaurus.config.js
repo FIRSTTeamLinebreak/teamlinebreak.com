@@ -41,7 +41,8 @@ const config = {
         title: 'Team Linebreak',
         logo: {
           alt: 'Team Linebreak logo',
-          src: 'img/logo.svg',
+          src: 'img/logoDark.png',
+          srcDark: 'img/logo.png',
         },
         items: [
           {
