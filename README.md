@@ -25,4 +25,5 @@ This command starts a local development server and opens up a browser window. Mo
 $ npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This command generates static content into the `build` directory and can be served using any static contents hosting service. <br/>
+The command `npm run serve` can be used in conjunction with this command to serve the static files build with `npm run build`.
