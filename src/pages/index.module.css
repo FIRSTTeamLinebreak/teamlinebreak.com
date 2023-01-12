@@ -3,6 +3,24 @@
  * and scoped locally.
  */
 
+.centerAligned {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundImage {
+  opacity: .5;
+  width: 30%;
+  object-fit:cover; 
+  height: 30%;
+}
+
+.text {
+  position: absolute;
+  padding: 20px;
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
