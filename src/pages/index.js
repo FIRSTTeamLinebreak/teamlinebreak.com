@@ -3,6 +3,8 @@ import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
+import {isMobile} from 'react-device-detect';
+
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -12,8 +14,8 @@ function HomepageHeader() {
       <div className={clsx("container", styles.centerAligned)}>
         <img src='img/logo.png' className={styles.backgroundImage}/>
         <div className={styles.text}>
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <h1 className="hero__title" style={!isMobile ? {fontSize: '5em'} : {}}>{isMobile ? "8546" : "Team Linebreak"}</h1>
+          <p className="hero__subtitle">{isMobile ? "Since 2020" : "Building robots since 2020"}</p>
         </div>
       </div>
     </header>

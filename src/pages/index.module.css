@@ -16,6 +16,15 @@
   height: 30%;
 }
 
+@media screen and (max-width: 996px) {
+  .backgroundImage {
+    opacity: .5;
+    width: 60%;
+    object-fit:cover; 
+    height: 60%;
+  }
+}
+
 .text {
   position: absolute;
   padding: 20px;
