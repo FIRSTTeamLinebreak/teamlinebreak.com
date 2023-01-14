@@ -59,11 +59,6 @@ const config = {
                         position: 'left'
                     },
                     {
-                        href: 'mailto:info@teamlinebreak.com',
-                        label: 'Contact Us',
-                        position: 'right',
-                    },
-                    {
                         href: 'https://github.com/FIRSTTeamLinebreak',
                         label: 'GitHub',
                         position: 'right',
@@ -72,8 +67,35 @@ const config = {
             },
             footer: {
                 style: 'dark',
-                links: [],
-                copyright: `This site is licensed under the MIT license. Made with code and Docusaurus :D`,
+                links: [
+                    {
+                        title: 'Contact Us',
+                        items: [
+                            {
+                                label: 'info@teamlinebreak.com',
+                                href: 'mailto:info@teamlinebreak.com'
+                            },
+                            {
+                                label: 'captain@teamlinebreak.com',
+                                href: 'mailto:captain@teamlinebreak.com'
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Socials',
+                        items: [
+                            {
+                                label: 'Instagram',
+                                href: 'https://instagram.com/firstteam8546?igshid=YmMyMTA2M2Y=',
+                            },
+                            {
+                                label: 'GitHub',
+                                href: 'https://github.com/FIRSTTeamLinebreak',
+                            },
+                        ]
+                    }
+                ],
+                copyright: `This site is licensed under the MIT license. Made by team 8546 with vsCode and Docusaurus`,
             },
             prism: {
                 theme: lightCodeTheme,
