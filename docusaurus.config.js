@@ -95,7 +95,7 @@ const config = {
                         ]
                     }
                 ],
-                copyright: `This site is licensed under the MIT license. Made by team 8546 with vsCode and Docusaurus`,
+                copyright: `This site is licensed under the MIT license. Made by team 8546 with vsCode and Docusaurus © 2022-current`,
             },
             prism: {
                 theme: lightCodeTheme,
