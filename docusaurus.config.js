@@ -28,7 +28,7 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
+                    sidebarPath: require.resolve('./config/sidebars.js'),
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -40,63 +40,8 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            navbar: {
-                title: 'Team Linebreak',
-                logo: {
-                    alt: 'Team Linebreak logo',
-                    src: 'img/logoDark.png',
-                    srcDark: 'img/logo.png',
-                },
-                items: [
-                    {
-                        to: '/hello-world',
-                        label: 'About',
-                        position: 'left'
-                    },
-                    {
-                        to: '/docs/',
-                        label: 'Info for Scouts',
-                        position: 'left'
-                    },
-                    {
-                        href: 'https://github.com/FIRSTTeamLinebreak',
-                        label: 'GitHub',
-                        position: 'right',
-                    },
-                ],
-            },
-            footer: {
-                style: 'dark',
-                links: [
-                    {
-                        title: 'Contact Us',
-                        items: [
-                            {
-                                label: 'info@teamlinebreak.com',
-                                href: 'mailto:info@teamlinebreak.com'
-                            },
-                            {
-                                label: 'captain@teamlinebreak.com',
-                                href: 'mailto:captain@teamlinebreak.com'
-                            },
-                        ],
-                    },
-                    {
-                        title: 'Socials',
-                        items: [
-                            {
-                                label: 'Instagram',
-                                href: 'https://instagram.com/firstteam8546?igshid=YmMyMTA2M2Y=',
-                            },
-                            {
-                                label: 'GitHub',
-                                href: 'https://github.com/FIRSTTeamLinebreak',
-                            },
-                        ]
-                    }
-                ],
-                copyright: `This site is licensed under the MIT license. Made by team 8546 with vsCode and Docusaurus © 2022-current`,
-            },
+            navbar: require('./config/navbar.js'),
+            footer: require('./config/footer.js'),
             prism: {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,

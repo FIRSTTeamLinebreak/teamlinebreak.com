@@ -8,7 +8,6 @@ import {isMobile} from 'react-device-detect';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className={clsx("container", styles.centerAligned)}>
@@ -23,10 +22,9 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={"Hello from Team Linebreak"}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
