@@ -28,6 +28,9 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
+                    id: 'scouting',
+                    path: 'scouting',
+                    routeBasePath: 'scouting',
                     sidebarPath: require.resolve('./config/sidebars.js'),
                 },
                 theme: {
@@ -36,6 +39,19 @@ const config = {
             }),
         ],
     ],
+
+    plugins: [
+        [
+          '@docusaurus/plugin-content-docs',
+          {
+            id: 'secrets',
+            path: 'secrets',
+            routeBasePath: 'secrets',
+            sidebarPath: require.resolve('./config/sidebarHidden.js'),
+            // ... other options
+          },
+        ],
+      ],
 
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

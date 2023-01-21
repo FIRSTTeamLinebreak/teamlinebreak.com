@@ -1,4 +1,5 @@
-/** @type {import('@docusaurus/plugin-content-docs').ThemeConfig.navbar} */
+// @ts-check
+/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 const navbar = {
     title: 'Team Linebreak',
     logo: {
@@ -13,7 +14,7 @@ const navbar = {
             position: 'left'
         },
         {
-            to: '/docs/',
+            to: '/scouting/',
             label: 'Info for Scouts',
             position: 'left'
         },
