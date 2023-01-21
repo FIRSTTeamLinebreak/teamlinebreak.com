@@ -7,7 +7,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Team Linebreak',
-    tagline: 'Building robots since 2020',
     url: 'https://teamlinebreak.com',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -42,16 +41,31 @@ const config = {
 
     plugins: [
         [
-          '@docusaurus/plugin-content-docs',
-          {
-            id: 'secrets',
-            path: 'secrets',
-            routeBasePath: 'secrets',
-            sidebarPath: require.resolve('./config/sidebarHidden.js'),
-            // ... other options
-          },
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'secrets',
+                path: 'secrets',
+                routeBasePath: 'secrets',
+                sidebarPath: require.resolve('./config/sidebarHidden.js'),
+                // ... other options
+            },
         ],
-      ],
+        [
+            '@docusaurus/plugin-client-redirects',
+            {
+                redirects: [
+                    {
+                        to: '/scouting',
+                        from: '/qr-redirect-1',
+                    },
+                    {
+                        to: '/',
+                        from: '/qr-redirect-2',
+                    },
+                ],
+            },
+        ],
+    ],
 
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
