@@ -8,7 +8,7 @@ Founded in 2020, we are a FIRST Robotics team from Idaho's Treasure Valley. 2020
 
 ## 📇 Contact Info
 
-Have a question? We'd love to chat. Shoot us an email at [hello@teamlinebreak.com](hello@teamlinebreak.com).
+Have a question? We'd love to chat. Shoot us an email at [hello@teamlinebreak.com](mailto:hello@teamlinebreak.com).
 
 ## 📚 Helpful Resources
 
