@@ -1,6 +1,6 @@
 # Team Linebreak Webpage
 
-The main landing page for FIRST team 8546: Team Linebreak! 
+The main landing page for FIRST Robotics team 8546: Team Linebreak!
 For more information about us either visit this webpage in a browser or check out our previous years code in our github org
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
