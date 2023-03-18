@@ -15,7 +15,7 @@ const sidebars = {
     docs: [
         {
             type: 'doc',
-            label: 'Scouting Summary',
+            label: 'Scouting FAQ',
             id: 'index',
         },
         {
@@ -45,15 +45,15 @@ const sidebars = {
                 },
                 {
                     type: 'doc',
-                    id: 'Autonomous/Implementation',
-                    label: 'Implementation',
-                },
-                {
-                    type: 'doc',
                     id: 'Autonomous/Goals',
                     label: 'Goals',
                 },
             ],
+        },
+        {
+            type: 'doc',
+            id: 'vision',
+            label: 'Vision',
         },
     ]
 };
