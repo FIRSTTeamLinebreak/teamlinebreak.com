@@ -20,7 +20,7 @@ const footer = {
             items: [
                 {
                     label: 'Instagram',
-                    href: 'https://instagram.com/firstteam8546?igshid=YmMyMTA2M2Y=',
+                    href: 'https://instagram.com/firstteam8546',
                 },
                 {
                     label: 'GitHub',
