@@ -1,1 +1,1 @@
-Autonoums Stratigies
+Autonomous Strategies

@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 
-import {isMobile} from 'react-device-detect';
+if(!process.env.IG_ACCESS_KEY) {
+  import('dotenv').config();
+}
+
+import { isMobile } from 'react-device-detect';
+import Instafeed from 'instafeed.js';
 
 import styles from './index.module.css';
 
@@ -21,15 +26,33 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+  let feed = new Instafeed({
+    accessToken: process.env.IG_ACCESS_KEY,
+    target: "instafeed",
+    template: `
+      <div style='flex: 20%'>
+        <a href='{{link}}'>
+          <img title='{{caption}}' src='{{image}}'/>
+        </a>
+        <div class='${clsx(styles.imgBorder)}'></div>
+        <img src='img/logo.png' class='${clsx(styles.logo)}'/>
+      </div>
+    `,
+    limit: 15
+  })
+
+  useEffect(() => {
+    feed.run();
+  })
+
   return (
     <Layout
       title={"Hello from Team Linebreak"}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-          <div className="text--center">
-            <h2>More information soon to come</h2>
-          </div>
+          <div className={clsx(styles.title)}><h1>Check Out Our Instagram <a href='https://www.instagram.com/firstteam8546/'>@firstteam8546</a></h1></div>
+          <div className={clsx(styles.container)} id="instafeed"></div>
       </main>
     </Layout>
   );
