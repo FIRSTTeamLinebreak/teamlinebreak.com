@@ -2,14 +2,11 @@ import React, { useEffect } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 
-if(!process.env.IG_ACCESS_KEY) {
-  import('dotenv').config();
-}
-
 import { isMobile } from 'react-device-detect';
 import Instafeed from 'instafeed.js';
 
 import styles from './index.module.css';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 function HomepageHeader() {
   return (
@@ -26,8 +23,10 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+  const { siteConfig } = useDocusaurusContext();
+
   let feed = new Instafeed({
-    accessToken: process.env.IG_ACCESS_KEY,
+    accessToken: siteConfig.customFields.IG_ACCESS_KEY,
     target: "instafeed",
     template: `
       <div style='flex: 20%'>
